@@ -1,5 +1,5 @@
 require("dotenv").config();
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs'); // Replace 'bcrypt' with 'bcryptjs'
 const jwt = require("jsonwebtoken");
 const User = require("../Models/User");
 const { sendOTPEmail } = require("../utils/otpmailer");
